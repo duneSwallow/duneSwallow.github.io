@@ -104,8 +104,8 @@ footer{
   <hr>
   <h3 class="w3-center">Hello!</h3>
   <p>
-      My name is Luke. I am currently a sophmore computer science student at <a href="http://www.stonybrook.edu/">Stony Brook University</a>.
-      My home-town is <a href="https://goo.gl/maps/CWcrMqHpsMp"> Medford</a>, New York .
+      My name is Luke. I am currently a sophmore computer science student at <a target="_blank" href="http://www.stonybrook.edu/">Stony Brook University</a>.
+      My home-town is <a target="_blank" href="https://goo.gl/maps/CWcrMqHpsMp"> Medford</a>, New York .
       I found my love of coding four years ago, and since then I have loved learning as much as I can
       about it.
   </p>
@@ -114,12 +114,13 @@ footer{
       <img src="images/luke.jpg" class="w3-round w3-image " alt="Photo of Me" width="500" height="333"><!--w3-opacity w3-hover-opacity-off-->
     </div>
     <p>
-      Outside the world of bits and bytes, I enjoy playing the viola in the <a href="http://www.stonybrook.edu/commcms/music/performances/ensembles/university_orchestra.html">
+      Outside the world of bits and bytes, I enjoy playing the viola in the <a target="_blank" href="http://www.stonybrook.edu/commcms/music/performances/ensembles/university_orchestra.html">
         University Orchestra</a>.
       On my spare time you might find me painting, birding, or reading a good sci-fi or fantasy novel.
     </p>
     <p>
-      I am also a member of the Stony Brook Robot Design team, contributing as the GUI-Subteam Lead. 
+      I am also a member of the <a target="_blank" href="https://www.facebook.com/SBRobotDesignTeam/">Stony Brook Robot Design Team</a>
+      , contributing as the GUI-Subteam Lead.
     </p>
   </div>
   <hr>
@@ -175,47 +176,38 @@ footer{
 </div>
 
 <!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
+<div class="w3-content w3-container w3-padding-16" id="portfolio">
+  <hr>
   <h3 class="w3-center">PROJECTS</h3>
-  <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
+  <p class="w3-center"><em>Some projects I have worked on in the past or am currently working on.<br> Click on the images to go to the Git repository on GitHub or BitBucket</em></p><br>
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
-      <img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+      <a target="_blank" href="https://github.com/duneSwallow/Meteor-" ><img src="images/meteorgame.png" style="width:100%" class="w3-hover-opacity" alt="Simple Meteor Game"></a>
+      A simple Java Applet arcade game I made a few years ago. My goal was to learn how to set up a basic game in Java.
     </div>
 
     <div class="w3-col m3">
-      <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+      <a target="_blank" href="https://bitbucket.org/LukeCesario/course-site-generator"><img src="images/csg.png" style="width:100%" class="w3-hover-opacity" alt="course site generator"></a>
+      A GUI tool for professors who would like to edit their course websites without always manually editing files. Primarily made in JavaFX.
     </div>
 
     <div class="w3-col m3">
-      <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+      <a target="_blank" href="https://github.com/duneSwallow/2048Assembly"><img src="images/assembly.png" style="width:100%" class="w3-hover-opacity" alt="2048 functionality in assembly"></a>
+      My largest work in MIPS assembly. Although no GUI is currently written, it provides the functionality for a 2048-like game.
     </div>
 
     <div class="w3-col m3">
-      <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+      <img src="images/mars.jpg" style="width:100%"  alt="gui for robot in progress">
+      I am working on a GUI for displaying rover data such as location and soil analysis readings. This project has allowed me to explore <a target="_blank" href="http://www.ros.org/">ROS</a>
+      and its associated framework <a target="_blank" href="http://wiki.ros.org/rqt">RQT</a>. This is for the <a target="_blank" href="http://urc.marssociety.org/">2018 University Rover Challenge</a>.
     </div>
   </div>
 
   <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3">
-      <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
-    </div>
-    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
   </div>
+  <hr>
 </div>
 
 <!-- Modal for full size images on click-->
@@ -237,14 +229,17 @@ footer{
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
 <!--  <h3 class="w3-center">WHERE I WORK</h3>-->
-  <p class="w3-center"><em>I'd love your feedback!</em></p>
+  <p class="w3-center"><em>I'd love to hear from you!</em></p>
 
   <div class="w3-row w3-padding-32 w3-section">
     <!--<div class="w3-col m4 w3-container">
       <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
     </div>-->
-      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-      <form action="/action_page.php" target="_blank">
+      <p class="w3-center">Feel free to send me an email: </p>
+      <address class="w3-center">
+        <a href="mailto:luke.cesario@stonybrook.edu">Click Here to Send me an Email</a>
+      </address>
+      <!--<form action="/action_page.php" target="_blank">
         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
           <div class="w3-half">
             <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
@@ -257,7 +252,7 @@ footer{
         <button class="w3-button w3-black w3-right w3-section" type="submit">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
-      </form>
+      </form>-->
     </div>
   </div>
 </div>
@@ -266,8 +261,9 @@ footer{
 <footer class="w3-center w3-padding-64">
   <a href="#home" class="w3-button w3-dark-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <a target="_blank" href="https://github.com/duneSwallow"><i class="fa fa-github w3-hover-opacity"></i></a>
+    <a target="_blank" href="https://bitbucket.org/LukeCesario/"><i class="fa fa-bitbucket w3-hover-opacity" ></i></a>
+    <a target="_blank" href="https://www.linkedin.com/in/luke-cesario-ab262915b/"><i class="fa fa-linkedin w3-hover-opacity" ></i></a>
   </div>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
